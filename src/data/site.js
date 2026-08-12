@@ -17,7 +17,7 @@ export const profile = {
   nationality: 'Guatemalteco',
   github: 'https://github.com/Gxbxsxn',
   cvUrl: '/cv-jonathan-siney.pdf',
-  photo: '/profile.jpg',
+  photo: 'profile.jpg',
   stats: [
     { label: 'Lenguajes de Programación', value: '5+' },
     { label: 'Cursos Certificados', value: '4' },
