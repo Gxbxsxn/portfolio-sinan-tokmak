@@ -16,8 +16,8 @@ export const profile = {
   address: '5A calle 3-74 zona 5 de Mixco, Col. Santa Marta, Cdad. de Guatemala',
   nationality: 'Guatemalteco',
   github: 'https://github.com/Gxbxsxn',
-  cvUrl: '/cv-jonathan-siney.pdf',
-  photo: 'profile.jpg',
+  cvUrl: 'cv-jonathan-siney.pdf',
+  photo: '/portfolio-sinan-tokmak/profile.jpg',
   stats: [
     { label: 'Lenguajes de Programación', value: '5+' },
     { label: 'Cursos Certificados', value: '4' },

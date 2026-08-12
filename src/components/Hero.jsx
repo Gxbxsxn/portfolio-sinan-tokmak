@@ -1,6 +1,25 @@
 import { profile } from '../data/site.js'
 
 export default function Hero() {
+  const handleDownload = async (e) => {
+    e.preventDefault()
+    try {
+      const res = await fetch(profile.cvUrl)
+      if (!res.ok) throw new Error('Network response was not ok')
+      const blob = await res.blob()
+      const url = URL.createObjectURL(blob)
+      const a = document.createElement('a')
+      a.href = url
+      a.download = 'cv-jonathan-siney.pdf'
+      document.body.appendChild(a)
+      a.click()
+      a.remove()
+      URL.revokeObjectURL(url)
+    } catch (err) {
+      console.error(err)
+      alert('No se pudo descargar el CV. Prueba abrir el enlace y guardar el archivo manualmente.')
+    }
+  }
   return (
     <section className="hero" id="home">
       <div className="hero-copy">
@@ -15,7 +34,7 @@ export default function Hero() {
           <a href={`mailto:${profile.email}`} className="btn btn-primary">
             Contrátame
           </a>
-          <a href={profile.cvUrl} download className="btn btn-ghost">
+          <a href={profile.cvUrl} onClick={handleDownload} className="btn btn-ghost">
             Mi CV
           </a>
         </div>
