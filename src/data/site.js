@@ -12,6 +12,7 @@ export const profile = {
     conocimientos técnicos y crear soluciones funcionales tanto del lado del
     cliente como del servidor.`,
   phone: '+502 4360-6764',
+  whatsapp: '50243606764',
   email: 'jsineylopez2005@gmail.com',
   address: '5A calle 3-74 zona 5 de Mixco, Col. Santa Marta, Cdad. de Guatemala',
   nationality: 'Guatemalteco',

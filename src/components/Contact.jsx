@@ -12,7 +12,12 @@ export default function Contact() {
           <FaEnvelope />
           <span>{profile.email}</span>
         </a>
-        <a className="contact-card" href={`tel:${profile.phone.replace(/\s/g, '')}`}>
+        <a
+          className="contact-card"
+          href={`https://wa.me/${profile.whatsapp}?text=${encodeURIComponent('Hola Jonathan, es un gusto saludarte. Revisamos tu portafolio y nos pareció muy interesante tu perfil profesional. Nos gustaría conocer más sobre tu experiencia y conversar contigo acerca de una posible oportunidad. ¿Podemos hablar? Quedamos atentos a tu respuesta. Muchas gracias.')}`}
+          target="_blank"
+          rel="noreferrer"
+        >
           <FaPhone />
           <span>{profile.phone}</span>
         </a>
