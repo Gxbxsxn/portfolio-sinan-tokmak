@@ -15,8 +15,14 @@ export default function Header() {
 
   return (
     <header className="site-header">
-      <a href="#home" className="logo">
-        {profile.fullName.split(' ')[0]} <span className="accent">{profile.fullName.split(' ')[1]}</span>
+      <a href="#home" className="logo" aria-label="Inicio">
+        {profile.logo ? (
+          <img src={profile.logo} alt={profile.name} className="logo-mark" />
+        ) : (
+          <>
+            {profile.fullName.split(' ')[0]} <span className="accent">{profile.fullName.split(' ')[1]}</span>
+          </>
+        )}
       </a>
 
       <nav className={`main-nav ${open ? 'is-open' : ''}`}>

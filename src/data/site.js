@@ -18,6 +18,7 @@ export const profile = {
   nationality: 'Guatemalteco',
   github: 'https://github.com/Gxbxsxn',
   cvUrl: 'cv-jonathan-siney.pdf',
+  logo: '/portfolio-sinan-tokmak/logo.png',
   photo: '/portfolio-sinan-tokmak/profile.jpg',
   stats: [
     { label: 'Lenguajes de Programación', value: '5+' },

@@ -82,10 +82,21 @@ main {
 }
 
 .logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   font-family: var(--font-heading);
   font-weight: 700;
   font-size: 1.15rem;
   white-space: nowrap;
+}
+
+.logo-mark {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 0 12px rgba(255, 107, 74, 0.25));
 }
 
 .main-nav {
