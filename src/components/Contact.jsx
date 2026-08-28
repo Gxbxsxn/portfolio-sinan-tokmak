@@ -1,4 +1,4 @@
-import { FaEnvelope, FaMapMarkerAlt, FaGithub } from 'react-icons/fa'
+import { FaEnvelope, FaMapMarkerAlt, FaGithub, FaPhone } from 'react-icons/fa'
 import { profile } from '../data/site.js'
 
 export default function Contact() {
@@ -11,6 +11,10 @@ export default function Contact() {
         <a className="contact-card" href={`mailto:${profile.email}`}>
           <FaEnvelope />
           <span>{profile.email}</span>
+        </a>
+        <a className="contact-card" href={`tel:${profile.phone.replace(/\D/g, '')}`}>
+          <FaPhone />
+          <span>{profile.phone}</span>
         </a>
         <div className="contact-card">
           <FaMapMarkerAlt />
