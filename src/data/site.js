@@ -113,12 +113,6 @@ export const projects = [
     link: 'https://github.com/Gxbxsxn/PruebaTecnica_Labymed',
   },
   {
-    title: 'labymedprueba',
-    description: 'Proyecto de práctica desarrollado para Labymed.',
-    tags: ['Proyecto de práctica'],
-    link: 'https://github.com/Gxbxsxn/labymedprueba',
-  },
-  {
     title: 'portfolio-sinan-tokmak',
     description: 'Portafolio personal desarrollado con JavaScript.',
     tags: ['JavaScript'],
