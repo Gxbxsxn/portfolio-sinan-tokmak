@@ -16,9 +16,9 @@ export const profile = {
   address: '5A calle 3-74 zona 5 de Mixco, Col. Santa Marta, Cdad. de Guatemala',
   nationality: 'Guatemalteco',
   github: 'https://github.com/Gxbxsxn',
-  cvUrl: 'cv-jonathan-siney.pdf',
-  logo: '/portfolio-sinan-tokmak/logo.png',
-  photo: '/portfolio-sinan-tokmak/profile.jpg',
+  cvUrl: `${import.meta.env.BASE_URL}cv-jonathan-siney.pdf`,
+  logo: `${import.meta.env.BASE_URL}logo.png`,
+  photo: `${import.meta.env.BASE_URL}profile.jpg`,
   stats: [
     { label: 'Lenguajes de Programación', value: '5+' },
     { label: 'Cursos Certificados', value: '4' },
@@ -107,22 +107,22 @@ export const courses = [
 // repos nuevos o cambias descripciones.
 export const projects = [
   {
-    title: 'Proyectos-Empleados',
-    description: 'Prueba de JS — gestión de empleados.',
+    title: 'PruebaTecnica_Labymed',
+    description: 'Prueba técnica desarrollada para Labymed.',
+    tags: ['TypeScript'],
+    link: 'https://github.com/Gxbxsxn/PruebaTecnica_Labymed',
+  },
+  {
+    title: 'labymedprueba',
+    description: 'Proyecto de práctica desarrollado para Labymed.',
+    tags: ['Proyecto de práctica'],
+    link: 'https://github.com/Gxbxsxn/labymedprueba',
+  },
+  {
+    title: 'portfolio-sinan-tokmak',
+    description: 'Portafolio personal desarrollado con JavaScript.',
     tags: ['JavaScript'],
-    link: 'https://github.com/Gxbxsxn/Proyectos-Empleados',
-  },
-  {
-    title: 'Proyecto-Operaciones',
-    description: 'Sistema de operaciones desarrollado en C#.',
-    tags: ['C#'],
-    link: 'https://github.com/Gxbxsxn/Proyecto-Operaciones',
-  },
-  {
-    title: 'Proyecto-Administración',
-    description: 'Sistema de administración construido con HTML.',
-    tags: ['HTML'],
-    link: 'https://github.com/Gxbxsxn/Proyecto-Administraci-n',
+    link: 'https://github.com/Gxbxsxn/portfolio-sinan-tokmak',
   },
   {
     title: 'Proyecto-MesaSitec',
@@ -131,15 +131,21 @@ export const projects = [
     link: 'https://github.com/Gxbxsxn/Proyecto-MesaSitec',
   },
   {
-    title: 'Prueba_lungo',
-    description: 'Gifcart — proyecto de práctica.',
-    tags: ['Proyecto de práctica'],
-    link: 'https://github.com/Gxbxsxn/Prueba_lungo',
+    title: 'Proyecto-Administraci-n',
+    description: 'Sistema de administración construido con HTML.',
+    tags: ['HTML'],
+    link: 'https://github.com/Gxbxsxn/Proyecto-Administraci-n',
   },
   {
-    title: 'jonathansiney.github.io',
-    description: 'Sitio personal publicado con GitHub Pages.',
-    tags: ['GitHub Pages'],
-    link: 'https://github.com/Gxbxsxn/jonathansiney.github.io',
+    title: 'Proyecto-Operaciones',
+    description: 'Sistema de operaciones desarrollado en C#.',
+    tags: ['C#'],
+    link: 'https://github.com/Gxbxsxn/Proyecto-Operaciones',
+  },
+  {
+    title: 'Proyectos-Empleados',
+    description: 'Prueba de JS — gestión de empleados.',
+    tags: ['JavaScript'],
+    link: 'https://github.com/Gxbxsxn/Proyectos-Empleados',
   },
 ]
